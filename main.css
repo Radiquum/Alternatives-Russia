@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+}
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: beige;
+  min-height: calc(1vh + 6rem);
+}
+header h1 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+header p {
+  font-size: x-large;
+  margin-top: -0.75rem;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(128, 128, 128, 0.75);
+  color: white;
+  min-height: calc(1vh + 6rem);
+}
+footer a:hover {
+  color: beige;
+}
+
+#cloud, #email, #Music, #Video, #Calls, #Office, #payment {
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(245, 245, 220, 0.644);
+}
+
+.services-container {
+  padding: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.services-container p {
+  font-size: x-large;
+}
+.services-container h1 {
+  display: inline;
+  border-bottom: 4px solid gray;
+}
+
+.element {
+  min-width: min-content;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.RuAlternative {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(1, 7rem);
+  gap: 4rem;
+}
+.RuAlternative img {
+  width: 7rem;
+}
+
+.Service {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(1, 5rem);
+  gap: 3rem;
+}
+.Service img {
+  width: 5rem;
+}
+
+/* responsive */
+@media (min-width: 22em) {
+  .RuAlternative {
+    grid-template-columns: repeat(2, 7rem);
+  }
+
+  .Service {
+    grid-template-columns: repeat(2, 5rem);
+  }
+}
+@media (min-width: 36em) {
+  header {
+    padding: 6rem;
+  }
+
+  .services-container {
+    padding: 4rem;
+  }
+
+  .RuAlternative {
+    grid-template-columns: repeat(3, 7rem);
+  }
+
+  .Service {
+    grid-template-columns: repeat(3, 5rem);
+  }
+}
+@media (min-width: 48em) {
+  .RuAlternative {
+    grid-template-columns: repeat(4, 7rem);
+  }
+
+  .Service {
+    grid-template-columns: repeat(4, 5rem);
+  }
+}
+@media (min-width: 58em) {
+  .RuAlternative {
+    grid-template-columns: repeat(5, 7rem);
+  }
+
+  .Service {
+    grid-template-columns: repeat(5, 5rem);
+  }
+}
+@media (min-width: 70em) {
+  .RuAlternative {
+    grid-template-columns: repeat(6, 7rem);
+  }
+
+  .Service {
+    grid-template-columns: repeat(6, 5rem);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
