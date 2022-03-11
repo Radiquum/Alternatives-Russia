@@ -2,7 +2,7 @@
 
 Alternatives to consumer services which was already, or may be in future, blocked or limited in Russia
 
-made by [@radiquum](https://radiquum.github.io)
+made by [Radiquum](https://radiquum.github.io) & [@itc1205](https://vk.com/xnor_xnor_xnor)
 
 inspired by [Brands in Russia](https://brandsinrussia.com)
 
