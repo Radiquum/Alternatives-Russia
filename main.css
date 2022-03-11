@@ -67,15 +67,13 @@ footer a:hover {
 }
 
 .element {
+  margin-top: 4rem;
   flex-basis: 30%;
   min-width: min-content;
-  align-items: center;
   text-align: center;
-  flex-direction: column;
 }
 
 .RuAlternative {
-  margin-top: 4rem;
   display: flex;
   align-content: stretch;
   flex-flow: row wrap;
@@ -91,7 +89,6 @@ footer a:hover {
 }
 
 .Service {
-  margin-top: 4rem;
   display: flex;
   align-content: stretch;
   flex-flow: row wrap;
@@ -106,59 +103,10 @@ footer a:hover {
   height: 7rem;
 }
 
-/* responsive */
-@media (min-width: 22em) {
-  .RuAlternative {
-    grid-template-columns: repeat(2, 7rem);
+@media screen and (max-width: 992px) {
+  .RuAlternative, .Service {
+    flex-flow: column wrap;
   }
 
-  .Service {
-    grid-template-columns: repeat(2, 5rem);
-  }
 }
-@media (min-width: 36em) {
-  header {
-    padding: 6rem;
-  }
-
-  .services-container {
-    padding: 4rem;
-  }
-
-  .RuAlternative {
-    grid-template-columns: repeat(3, 7rem);
-  }
-
-  .Service {
-    grid-template-columns: repeat(3, 5rem);
-  }
-}
-@media (min-width: 48em) {
-  .RuAlternative {
-    grid-template-columns: repeat(4, 7rem);
-  }
-
-  .Service {
-    grid-template-columns: repeat(4, 5rem);
-  }
-}
-@media (min-width: 58em) {
-  .RuAlternative {
-    grid-template-columns: repeat(5, 7rem);
-  }
-
-  .Service {
-    grid-template-columns: repeat(5, 5rem);
-  }
-}
-@media (min-width: 70em) {
-  .RuAlternative {
-    grid-template-columns: repeat(6, 7rem);
-  }
-
-  .Service {
-    grid-template-columns: repeat(6, 5rem);
-  }
-}
-
 /*# sourceMappingURL=main.css.map */
