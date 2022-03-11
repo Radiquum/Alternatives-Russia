@@ -42,7 +42,13 @@ footer a:hover {
   color: beige;
 }
 
-#cloud, #email, #Music, #Video, #Calls, #Office, #payment {
+#cloud,
+#email,
+#Music,
+#Video,
+#Calls,
+#Office,
+#payment {
   background-position: center;
   background-attachment: fixed;
   background-color: rgba(245, 245, 220, 0.644);
@@ -61,31 +67,43 @@ footer a:hover {
 }
 
 .element {
+  flex-basis: 30%;
   min-width: min-content;
   align-items: center;
   text-align: center;
-  display: flex;
   flex-direction: column;
 }
 
 .RuAlternative {
   margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(1, 7rem);
-  gap: 4rem;
+  display: flex;
+  align-content: stretch;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
+
 .RuAlternative img {
-  width: 7rem;
+  object-fit: scale-down;
+  object-position: 50% 50%;
+  max-width: 12.4rem;
+  aspect-ratio: auto;
+  height: 7rem;
 }
 
 .Service {
   margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(1, 5rem);
-  gap: 3rem;
+  display: flex;
+  align-content: stretch;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
+
 .Service img {
-  width: 5rem;
+  object-fit: scale-down;
+  object-position: 50% 50%;
+  max-width: 12.4rem;
+  aspect-ratio: 16 / 9;
+  height: 7rem;
 }
 
 /* responsive */
