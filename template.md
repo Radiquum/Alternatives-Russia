@@ -1,5 +1,6 @@
 # Template for new services 
 
+## for new category
 ```
 
     <div class="services-container" id="template">
@@ -30,5 +31,17 @@
         </div>
 
     </div>
+
+```
+
+
+## service only
+
+```
+<div class="element">
+    <img src="./service(alternative)/(path)/example.webp (.svg)">
+    <p>example</p>
+    <a href="https://example.com" rel="noopener" target="_blank"></a> //delete this line if link is not present
+</div>
 
 ```

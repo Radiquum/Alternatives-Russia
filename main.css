@@ -2,12 +2,14 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body a {
   text-decoration: none;
   color: white;
 }
 
-header, footer {
+header,
+footer {
   text-align: left;
   display: flex;
   flex-direction: column;
@@ -15,10 +17,12 @@ header, footer {
   background-color: beige;
   min-height: calc(1vh + 6rem);
 }
+
 header h1 {
   font-weight: bold;
   font-size: xx-large;
 }
+
 header p {
   font-size: x-large;
   margin-top: -0.75rem;
@@ -30,6 +34,7 @@ footer {
   color: white;
   min-height: calc(1vh + 6rem);
 }
+
 footer a:hover {
   color: beige;
 }
@@ -48,21 +53,22 @@ footer a:hover {
   padding: 2rem;
   text-align: center;
 }
+
 .services-container p {
   font-size: x-large;
 }
+
 .services-container h1 {
   display: inline;
   border-bottom: 4px solid gray;
 }
 
 .services-container h2 {
-  margin-block: 2rem;
+  padding-block: 2rem;
 }
 
 .Service {
   display: flex;
-  align-content: stretch;
   flex-flow: row wrap;
   justify-content: space-evenly;
   margin-top: 2rem;
@@ -74,13 +80,17 @@ footer a:hover {
   max-width: 12.4rem;
   height: 8rem;
   aspect-ratio: 16/9;
-  margin-block: 0.5rem;
 }
 
 .element {
-  flex-basis: 10%;
-  margin-inline: 1rem;
   position: relative;
+  transition: background-color 0.5s;
+  border-radius: 25px;
+  padding: 0.5rem;
+}
+
+.element:hover {
+  background-color: antiquewhite;
 }
 
 .element a {
@@ -97,7 +107,19 @@ footer a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .Service {
-    flex-flow: column wrap;
+
+  header,
+  footer,
+  .services-container {
+    padding: 1rem;
+  }
+
+  .Service img {
+    max-width: 6.2rem;
+    height: 4rem;
+  }
+
+  .element {
+    margin-inline: 0.5rem;
   }
 }
