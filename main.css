@@ -1,1 +1,125 @@
-body{margin:0;font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif}body a{text-decoration:none;color:#fff}footer,header{text-align:left;display:flex;flex-direction:column;padding:4rem;background-color:beige;min-height:calc(1vh + 6rem)}header h1{font-weight:700;font-size:xx-large}header p{font-size:x-large;margin-top:-.75rem}footer{text-align:center;background-color:rgba(128,128,128,.75);color:#fff;min-height:calc(1vh + 6rem)}footer a:hover{color:beige}#Calls,#Music,#Office,#Video,#cloud,#email,#payment{background-color:rgba(245,245,220,.644)}.services-container{padding:2rem;text-align:center}.services-container p{font-size:x-large}.services-container h1{display:inline;border-bottom:4px solid gray}.services-container h2{padding-block:2rem}.Service{display:flex;flex-flow:row wrap;justify-content:space-evenly;margin-top:2rem}.Service img{object-fit:contain;object-position:50% 50%;max-width:12.4rem;height:8rem;aspect-ratio:16/9}.element{position:relative;transition:background-color .5s;border-radius:25px;padding:.5rem}.element:hover{background-color:#faebd7}.element a{position:absolute;width:100%;height:100%;top:0;left:0;text-decoration:none;z-index:10;background-color:#fff;opacity:0}@media screen and (max-width:768px){.services-container,footer,header{padding:1rem}.Service img{max-width:6.2rem;height:4rem}.element{margin-inline:0.5rem}}
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body a {
+  text-decoration: none;
+  color: white;
+}
+
+header,
+footer {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  background-color: beige;
+  min-height: calc(1vh + 6rem);
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+header p {
+  font-size: x-large;
+  margin-top: -0.75rem;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.75);
+  color: white;
+  min-height: calc(1vh + 6rem);
+}
+
+footer a:hover {
+  color: beige;
+}
+
+#cloud,
+#email,
+#Music,
+#Video,
+#Calls,
+#Office,
+#payment {
+  background-color: rgba(245, 245, 220, 0.644);
+}
+
+.services-container {
+  padding: 2rem;
+  text-align: center;
+}
+
+.services-container p {
+  font-size: x-large;
+}
+
+.services-container h1 {
+  display: inline;
+  border-bottom: 4px solid gray;
+}
+
+.services-container h2 {
+  padding-block: 2rem;
+}
+
+.Service {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+}
+
+.Service img {
+  object-fit: contain;
+  object-position: 50% 50%;
+  max-width: 12.4rem;
+  height: 8rem;
+  aspect-ratio: 16/9;
+}
+
+.element {
+  position: relative;
+  transition: background-color 0.5s;
+  border-radius: 25px;
+  padding: 0.5rem;
+}
+
+.element:hover {
+  background-color: antiquewhite;
+}
+
+.element a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=1);
+}
+
+@media screen and (max-width: 768px) {
+
+  header,
+  footer,
+  .services-container {
+    padding: 1rem;
+  }
+
+  .Service img {
+    max-width: 6.2rem;
+    height: 4rem;
+  }
+
+  .element {
+    margin-inline: 0.5rem;
+  }
+}
