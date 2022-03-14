@@ -1,5 +1,7 @@
-name: Copy To Branches
+name: Copy To Pages
 on:
+  push:
+    branches: [ main ]
   workflow_dispatch:
 jobs:
   copy-to-branches:
@@ -12,3 +14,5 @@ jobs:
         uses: planetoftheweb/copy-to-branches@v1
         env:
           files: alternative/* service/* index.html main.css
+          branches: github-pages
+          key: main
