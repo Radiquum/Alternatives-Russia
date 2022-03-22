@@ -87,6 +87,7 @@ footer a:hover {
   transition: background-color 0.5s;
   border-radius: 25px;
   padding: 0.5rem;
+  margin: 0.1rem;
 }
 
 .element:hover {
@@ -106,20 +107,39 @@ footer a:hover {
   filter: alpha(opacity=1);
 }
 
+#mdate {
+  text-align: right;
+  font-size: larger;
+}
+
 @media screen and (max-width: 768px) {
 
   header,
   footer,
   .services-container {
-    padding: 1rem;
+    padding: 1.5rem;
+  }
+
+  .services-container p {
+    font-size: larger;
+  }
+
+  .element p {
+    vertical-align: middle;
   }
 
   .Service img {
-    max-width: 6.2rem;
+    max-width: 7rem;
     height: 4rem;
   }
 
   .element {
-    margin-inline: 0.5rem;
+    max-width: 7rem;
   }
+
+  #mdate {
+    font-size: smaller;
+    text-align: left;
+  }
+
 }
