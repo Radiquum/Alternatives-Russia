@@ -10,7 +10,7 @@
         <div class="Service">
 
             <div class="element">
-                <img src="./alternative/(path)/example.webp (.svg)">
+                <img loading="lazy" src="./alternative/(path)/example.webp (.svg)">
                 <p>example</p>
                 <a href="https://example.com" rel="noopener" target="_blank"></a> //delete this line if link is not present
             </div>
@@ -22,7 +22,7 @@
         <div class="Service">
 
                 <div class="element">
-                <img src="./service/(path)/example.webp (.svg)">
+                <img loading="lazy" src="./service/(path)/example.webp (.svg)">
                 <p>example</p>
                 <a href="https://example.com" rel="noopener" target="_blank"></a> //delete this line if link is not present
 
@@ -39,7 +39,7 @@
 
 ```
 <div class="element">
-    <img src="./service(alternative)/(path)/example.webp (.svg)">
+    <img loading="lazy" src="./service(alternative)/(path)/example.webp (.svg)">
     <p>example</p>
     <a href="https://example.com" rel="noopener" target="_blank"></a> //delete this line if link is not present
 </div>
